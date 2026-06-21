@@ -1,0 +1,21 @@
+# Robots.txt for sanjaykhannaMD.com
+# Allow all search engines to index the site
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://sanjaykhannaMD.com/sitemap.xml
+
+# Block common bot spam patterns (security)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /

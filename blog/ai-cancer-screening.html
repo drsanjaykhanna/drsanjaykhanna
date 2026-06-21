@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Case for AI in Cancer Screening | Dr. Sanjay Khanna</title>
+    
+    <meta name="description" content="The NHS lung screening programme has a 50% uptake problem. I modelled whether AI-driven patient engagement could close the gap, and what the economics look like.">
+    <meta name="keywords" content="AI cancer screening, lung cancer screening, health economics, LLM healthcare, multi-cancer early detection, MCED, NHS screening, health equity, cost-effectiveness">
+    <meta name="author" content="Dr. Sanjay Khanna">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sanjaykhannaMD.com/blog/ai-cancer-screening.html">
+    
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sanjaykhannaMD.com/blog/ai-cancer-screening.html">
+    <meta property="og:title" content="The Case for AI in Cancer Screening: Why Now, and What Comes Next">
+    <meta property="og:description" content="The NHS lung screening programme has a 50% uptake problem. I modelled whether AI-driven patient engagement could close the gap.">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Dr. Sanjay Khanna">
+    <meta property="article:published_time" content="2026-05-14">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #f7f5f2;
+            --bg-card: #ffffff;
+            --text: #2a2a2a;
+            --text-secondary: #555;
+            --text-tertiary: #7a7a7a;
+            --accent: #1a4a5e;
+            --accent-light: #e8f1f5;
+            --border: #e2ddd6;
+            --font-display: 'Newsreader', Georgia, serif;
+            --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+            --max-width: 680px;
+            --transition: 0.2s ease;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-body);
+            font-size: 17px;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .wrapper {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        /* --- NAV --- */
+        header {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+
+        .nav {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 20px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-name {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .nav-name:hover { color: var(--accent); }
+
+        .nav-back {
+            font-size: 14px;
+            color: var(--text-tertiary);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        .nav-back:hover { color: var(--accent); }
+
+        /* --- ARTICLE --- */
+        .article-header {
+            padding: 64px 0 40px;
+        }
+
+        .article-header h1 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+            color: var(--text);
+            margin-bottom: 16px;
+        }
+
+        .article-meta {
+            font-size: 14px;
+            color: var(--text-tertiary);
+        }
+
+        .article-body {
+            padding-bottom: 80px;
+        }
+
+        .article-body h2 {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-top: 48px;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        .article-body p {
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+
+        .article-body p:last-child { margin-bottom: 0; }
+
+        .article-body strong {
+            font-weight: 600;
+        }
+
+        .article-body em {
+            font-style: italic;
+        }
+
+        /* --- FOOTER --- */
+        .post-footer {
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .post-footer a {
+            font-size: 14px;
+            color: var(--accent);
+            text-decoration: none;
+            transition: opacity var(--transition);
+        }
+
+        .post-footer a:hover { opacity: 0.7; }
+
+        @media (max-width: 640px) {
+            .article-header h1 { font-size: 1.5rem; }
+            body { font-size: 16px; }
+            .article-header { padding: 48px 0 32px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <a href="../" class="nav-name">Sanjay Khanna</a>
+            <a href="../" class="nav-back">&larr; Home</a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+        <div class="article-header">
+            <h1>The Case for AI in Cancer Screening: Why Now, and What Comes Next</h1>
+            <p class="article-meta">May 2026 &middot; Health AI &middot; Cancer Screening</p>
+        </div>
+
+        <article class="article-body">
+            <p>We have a screening problem, and it is not the one most people think it is.</p>
+
+            <p>The NHS Lung Cancer Screening programme is a triumph of evidence-based policy. Decades of trial data, culminating in the NELSON trial, demonstrated that low-dose CT screening reduces lung cancer mortality by 20-26%. The programme is rolling out nationally. The scanners work. The nodule protocols are mature. And yet roughly half the people invited do not attend.</p>
+
+            <p>That number deserves to sit with you for a moment. We built the infrastructure, proved the science, secured the funding, and 50% of eligible people do not walk through the door. In the most deprived communities, participation falls to 33%. These are precisely the populations with the highest lung cancer incidence and the worst outcomes.</p>
+
+            <p>The UK, for all its challenges, is ahead of most. In the United States, where the USPSTF has recommended LDCT screening since 2013, fewer than 6% of eligible individuals have ever been screened. Six percent. The infrastructure exists, the evidence is unambiguous, and the richest country in the world screens a fraction of its at-risk population. Most low- and middle-income countries have no organised lung cancer screening pathway at all.</p>
+
+            <p>This is not a technology problem. It is a human behaviour problem. And I believe artificial intelligence, deployed thoughtfully, offers a genuine path to solving it.</p>
+
+            <h2>The engagement gap</h2>
+
+            <p>Why don't people attend screening? The reasons are well-characterised: fatalism about cancer, low health literacy, mistrust of medical institutions, practical barriers like transport and work schedules, and communication that fails to meet people where they are. The standard invitation letter is a one-size-fits-all document that assumes a reading level, a degree of health engagement, and a set of motivations that simply do not apply to everyone. Our team's previous work has shown that the online resources are no better.</p>
+
+            <p>What if we could have a conversation instead? Not a generic leaflet, but an interaction tailored to the individual: their language, their concerns, their specific barriers to attendance. Not replacing the screening nurse or the GP, but reaching people before they ever get to that stage.</p>
+
+            <p>Large language models make this technically feasible in a way it was not even two years ago. A multilingual, culturally sensitive conversational tool that can adapt to the individual at scale. No clinic space. No additional workforce. Just language.</p>
+
+            <h2>Building a screening interface that actually works</h2>
+
+            <p>Before asking whether AI engagement improves uptake, you need a tool worth deploying. Most healthcare chatbots fail not because the underlying model is incapable, but because nobody thought carefully about what a patient in this specific situation actually needs to hear. I have spent the past year exploring what a conversational AI agent for the NHS lung cancer screening pathway should look like, and what it should not.</p>
+
+            <p>The starting point was understanding where existing tools fall short. Frontier models like Gemini 2.5 Flash produce responses averaging over 400 words per turn, full of markdown formatting, bullet points, and exhaustive disclaimers. Ask them a simple question about your screening appointment and you receive an essay. For a patient who has just been told they need a recall scan, that is not helpful. It is overwhelming. We validated this clinically: patients in safety-critical scenarios, those with red-flag symptoms, emotional distress, or low health literacy, are actively harmed by information overload.</p>
+
+            <p>So we tested something different. We took Google's Gemma 2 at 9 billion parameters, an open-source model small enough to run on a single GPU, and fine-tuned it on over 5,000 screening conversations designed around the full diversity of patient presentations you actually encounter in this programme. The result is a model that responds in under 100 words per turn, adapts its language to the patient's literacy level, never crosses the boundary into clinical decision-making, and outperforms the frontier model on exactly the categories that matter most: red-flag symptoms, emotional crisis, post-screening anxiety, and low health literacy. Zero boundary violations across 300 test conversations.</p>
+
+            <p>We also demonstrated something relevant to the broader field of clinical AI evaluation. Verbosity bias in LLM judges is well-documented, but what we showed specifically is how rubric-based and persona-based prompting produce divergent model rankings in safety-critical settings. When a judge scores individual dimensions like accuracy, empathy, and completeness separately, verbose responses win. When the judge adopts the patient's identity and rates the conversation as a whole, the concise, adapted response wins. This has practical implications for anyone trying to guardrail and evaluate clinical chatbots: your evaluation framework shapes which model you select, and decomposed rubrics may reward the wrong qualities for patient-facing deployment. We are publishing this as a standalone methodological contribution.</p>
+
+            <p>Because the model is open-source and runs on a single GPU, it can in principle be hosted within NHS trust infrastructure without routing patient data through external APIs. That does not make deployment simple. The data governance landscape in the NHS is genuinely complex, and reasonable people disagree about where the boundaries should sit for AI-generated clinical communication. But choosing an architecture that makes local deployment possible at least keeps the conversation about governance and oversight rather than about technical dependency on a third party.</p>
+
+            <h2>What the economics show</h2>
+
+            <p>Once the tool existed, the question became: is deploying it worth it? Not as a nice idea, but as a health economic proposition that a body like NICE would find credible.</p>
+
+            <p>I built a microsimulation model tracking 50,000 individuals over a 45-year time horizon through the lung cancer screening pathway, incorporating stage-shift dynamics, treatment costs, quality-adjusted life years, and mortality. The central question: if an LLM-based engagement tool improved screening uptake by 5 percentage points, a deliberately conservative assumption given the behavioural intervention literature, what happens downstream?</p>
+
+            <p>At open-source deployment costs, the incremental cost-effectiveness ratio falls to approximately £15,000 per QALY gained, comfortably within the NICE threshold. The finding I care most about is distributional. The most deprived quintile, the group with 33% baseline uptake and the highest disease burden, gains the largest absolute health benefit. The gradient runs in exactly the direction we need. This is not AI exacerbating inequality. This is AI reducing it.</p>
+
+            <p>A language-only deployment strategy, meaning multilingual conversational support without any assumptions about broader engagement effects, dominates standard care across the modelled scenarios. You do not need an app. You do not need a smartphone. You need the ability to receive and respond to a message in your own language.</p>
+
+            <p>The binding uncertainty is the magnitude of the uptake effect. A pilot trial costing £200,000 to £500,000 has an expected information value of £2.4 million. The NHS should be willing to pay up to £2.4 million just to learn whether this works, because resolving that uncertainty is worth that much. A pilot is not merely justified. It would be irrational not to run one.</p>
+
+            <p>This work is being prepared for peer-reviewed publication.</p>
+
+            <h2>Why now, and what comes next</h2>
+
+            <p>Two things have converged to make this moment different from previous waves of digital health enthusiasm.</p>
+
+            <p>First, we have a policy window. The NHS lung screening programme is in active rollout. The architecture is being built now. Embedding an engagement layer into that architecture is orders of magnitude easier today than retrofitting it in five years.</p>
+
+            <p>Second, the next generation of screening is already visible. Multi-cancer early detection through blood-based tests: a single blood draw detecting signal from dozens of cancer types simultaneously. The biology is real, circulating tumour DNA and methylation signatures are detectable, and large-scale validation studies are underway. MCED has the potential to replace organ-specific programmes with a single test integrated into routine blood work.</p>
+
+            <p>But MCED will face exactly the same engagement challenges that lung screening faces today. Perhaps worse, because the concept is less intuitive to the public and the follow-up pathway after a positive signal is more complex. The people hardest to reach for lung screening will be hardest to reach for blood-based screening.</p>
+
+            <p>This is why the work on AI-driven engagement matters beyond its immediate application. We are building the tools and the evidence base for a world where screening is simpler, broader, and more equitable. But only if we solve the human problem alongside the biological one.</p>
+
+            <p>We missed this opportunity with cervical screening uptake decline. We are at risk of missing it with lung screening. With blood-based multi-cancer detection on the horizon, the stakes are about to get much higher. The evidence supports acting. The economics support acting. The equity case demands it.</p>
+        </article>
+
+        <div class="post-footer">
+            <a href="../">&larr; Back to home</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

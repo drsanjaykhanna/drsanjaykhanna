@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sanjay Khanna | Oncology, Health AI & Policy</title>
+    
+    <meta name="description" content="Dr. Sanjay Khanna — physician-scientist working across clinical oncology, health AI, cancer screening policy, and pharmaceutical medicine. Royal Marsden Hospital, Institute of Cancer Research, Roche.">
+    <meta name="keywords" content="oncology, health AI, cancer screening, multi-cancer early detection, MCED, pharmaceutical medicine, health policy, lung cancer screening, artificial intelligence healthcare, NHS screening programme">
+    <meta name="author" content="Dr. Sanjay Khanna">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sanjaykhannaMD.com/">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sanjaykhannaMD.com/">
+    <meta property="og:title" content="Dr. Sanjay Khanna | Oncology, Health AI & Policy">
+    <meta property="og:description" content="Physician-scientist working at the intersection of clinical oncology, health AI, cancer screening, and pharmaceutical policy. Writing on early detection, AI in medicine, and health equity.">
+    <meta property="og:image" content="https://sanjaykhannaMD.com/profile.png">
+    <meta property="og:locale" content="en_GB">
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Dr. Sanjay Khanna | Oncology, Health AI & Policy">
+    <meta name="twitter:description" content="Physician-scientist working at the intersection of clinical oncology, health AI, cancer screening, and pharmaceutical policy.">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dr. Sanjay Khanna",
+        "url": "https://sanjaykhannaMD.com",
+        "image": "https://sanjaykhannaMD.com/profile.png",
+        "jobTitle": ["Medical Oncology Registrar", "Pharmaceutical Physician", "Clinical Research Fellow"],
+        "worksFor": [
+            {"@type": "Organization", "name": "The Royal Marsden Hospital"},
+            {"@type": "Organization", "name": "Institute of Cancer Research"},
+            {"@type": "Organization", "name": "Roche Products Ltd"}
+        ],
+        "knowsAbout": ["Medical Oncology", "Pharmaceutical Medicine", "Health AI", "Multi-Cancer Early Detection", "Cancer Screening Policy", "Microsimulation Modelling", "Clinical Decision Support", "Health Economics", "Lung Cancer Screening", "Health Equity"],
+        "sameAs": [
+            "https://www.linkedin.com/in/drsanjaykhanna/",
+            "https://scholar.google.com/citations?user=gL6jTOUAAAAJ&hl=en"
+        ],
+        "award": ["ESMO AI Merit Award 2025", "Dean's Prize 2014"],
+        "alumniOf": [
+            {"@type": "CollegeOrUniversity", "name": "Brighton and Sussex Medical School"},
+            {"@type": "CollegeOrUniversity", "name": "University of Manchester"},
+            {"@type": "CollegeOrUniversity", "name": "Institute of Cancer Research"}
+        ]
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #f7f5f2;
+            --bg-card: #ffffff;
+            --bg-accent: #f0ede8;
+            --text: #2a2a2a;
+            --text-secondary: #555;
+            --text-tertiary: #7a7a7a;
+            --accent: #1a4a5e;
+            --accent-light: #e8f1f5;
+            --accent-warm: #8b5e3c;
+            --border: #e2ddd6;
+            --border-hover: #c9c2b8;
+            --radius: 6px;
+            --font-display: 'Newsreader', Georgia, serif;
+            --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+            --max-width: 820px;
+            --transition: 0.2s ease;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .wrapper {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        /* --- NAV --- */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            background: rgba(247, 245, 242, 0.9);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 14px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-name {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--text);
+            letter-spacing: -0.01em;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: color var(--transition);
+        }
+
+        .nav-links a:hover { color: var(--accent); }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 5px;
+            padding: 8px;
+            margin: -8px;
+        }
+
+        .hamburger span {
+            width: 20px;
+            height: 1.5px;
+            background: var(--text);
+            transition: all 0.3s ease;
+        }
+
+        .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(4.5px, 4.5px); }
+        .hamburger.active span:nth-child(2) { opacity: 0; }
+        .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(4.5px, -4.5px); }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: var(--bg);
+            z-index: 99;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .mobile-menu.active { display: flex; }
+        .mobile-menu a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        /* --- HERO --- */
+        .hero {
+            padding: 140px 0 72px;
+        }
+
+        .hero-top {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            margin-bottom: 36px;
+        }
+
+        .hero-photo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--border);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+
+        .hero-intro h1 {
+            font-family: var(--font-display);
+            font-size: 1.7rem;
+            font-weight: 500;
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+            color: var(--text);
+        }
+
+        .hero-intro .affiliations {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-top: 6px;
+        }
+
+        .hero-statement {
+            font-size: 17px;
+            line-height: 1.85;
+            color: var(--text);
+            max-width: 680px;
+            margin-bottom: 32px;
+        }
+
+        .hero-statement .highlight {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .hero-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .hero-links a {
+            font-size: 13px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            transition: all var(--transition);
+        }
+
+        .hero-links a:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--accent-light);
+        }
+
+        /* --- SECTIONS --- */
+        .section {
+            padding: 64px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 32px;
+        }
+
+        .section-header h2 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            color: var(--text);
+        }
+
+        .section-header a {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        .section-header a:hover { color: var(--accent); }
+
+        /* --- WRITING / BLOG --- */
+        .writing-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .writing-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px 32px;
+            text-decoration: none;
+            color: inherit;
+            transition: all var(--transition);
+            display: block;
+        }
+
+        .writing-item:hover {
+            border-color: var(--accent);
+            box-shadow: 0 2px 12px rgba(26, 74, 94, 0.06);
+            transform: translateY(-1px);
+        }
+
+        .writing-item h3 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .writing-item p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.65;
+            margin-bottom: 12px;
+        }
+
+        .writing-meta {
+            font-size: 13px;
+            color: var(--text-tertiary);
+        }
+
+        /* --- CURRENT WORK --- */
+        .current-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .current-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 24px;
+            transition: border-color var(--transition);
+        }
+
+        .current-card:hover { border-color: var(--border-hover); }
+
+        .current-card h3 {
+            font-family: var(--font-display);
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+
+        .current-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .current-card .org {
+            font-size: 12px;
+            color: var(--accent);
+            margin-top: 12px;
+            font-weight: 500;
+        }
+
+        /* --- PUBLICATIONS --- */
+        .pub-list {
+            list-style: none;
+        }
+
+        .pub-item {
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 24px;
+        }
+
+        .pub-item:last-child { border-bottom: none; }
+
+        .pub-title {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text);
+            line-height: 1.5;
+        }
+
+        .pub-venue {
+            font-size: 12px;
+            color: var(--accent);
+            white-space: nowrap;
+            flex-shrink: 0;
+            font-weight: 500;
+        }
+
+        /* --- BACKGROUND --- */
+        .background-text {
+            font-size: 15px;
+            line-height: 1.85;
+            color: var(--text-secondary);
+            max-width: 680px;
+        }
+
+        .background-text p {
+            margin-bottom: 16px;
+        }
+
+        .background-text p:last-child { margin-bottom: 0; }
+
+        /* --- EXPAND / COLLAPSE --- */
+        .expandable {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .expandable.open {
+            max-height: 2000px;
+        }
+
+        .expand-btn {
+            display: inline-block;
+            font-size: 13px;
+            color: var(--text-tertiary);
+            cursor: pointer;
+            margin-top: 16px;
+            padding: 6px 0;
+            border: none;
+            background: none;
+            font-family: var(--font-body);
+            transition: color var(--transition);
+        }
+
+        .expand-btn:hover { color: var(--accent); }
+
+        /* --- CREDENTIALS --- */
+        .cred-section {
+            margin-top: 32px;
+        }
+
+        .cred-section h3 {
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+
+        .cred-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px 36px;
+        }
+
+        .cred-item {
+            font-size: 14px;
+        }
+
+        .cred-item strong {
+            font-weight: 500;
+            color: var(--text);
+            display: block;
+        }
+
+        .cred-item span {
+            color: var(--text-tertiary);
+            font-size: 13px;
+        }
+
+        /* --- FOOTER --- */
+        .footer {
+            padding: 48px 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-bottom: 16px;
+        }
+
+        .footer-links a {
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        .footer-links a:hover { color: var(--accent); }
+
+        .footer-copy {
+            font-size: 12px;
+            color: var(--text-tertiary);
+        }
+
+        /* --- ANIMATIONS --- */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 640px) {
+            .hero { padding: 110px 0 60px; }
+            .hero-top { gap: 16px; }
+            .hero-photo { width: 100px; height: 100px; }
+            .hero-intro h1 { font-size: 1.3rem; }
+            .hero-statement { font-size: 15px; }
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .current-grid { grid-template-columns: 1fr; }
+            .cred-list { grid-template-columns: 1fr; }
+            .pub-item { flex-direction: column; gap: 4px; }
+            .section { padding: 48px 0; }
+            .writing-item { padding: 20px 24px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <span class="nav-name">Sanjay Khanna MD</span>
+            <div class="nav-links">
+                <a href="#perspectives">Perspectives</a>
+                <a href="#work">Work</a>
+                <a href="#publications">Publications</a>
+                <a href="#background">Background</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#perspectives" onclick="closeMenu()">Perspectives</a>
+        <a href="#work" onclick="closeMenu()">Work</a>
+        <a href="#publications" onclick="closeMenu()">Publications</a>
+        <a href="#background" onclick="closeMenu()">Background</a>
+    </div>
+
+    <div class="wrapper">
+
+        <!-- HERO -->
+        <section class="hero fade-in">
+            <div class="hero-top">
+                <img src="profile.png" alt="Dr. Sanjay Khanna" class="hero-photo">
+                <div class="hero-intro">
+                    <h1>Dr. Sanjay Khanna</h1>
+                    <p class="affiliations">Royal Marsden Hospital &middot; Institute of Cancer Research &middot; Roche</p>
+                </div>
+            </div>
+
+            <p class="hero-statement">
+                Medical oncology registrar and pharmaceutical physician with expertise in industry-driven drug development. Currently based at the Royal Marsden Hospital (Early Diagnosis & Detection Unit), undertaking industry-sponsored doctoral research in patient-facing AI and multi-cancer early detection at the Institute of Cancer Research. Research interests: AI-driven patient communication for cancer screening, blood-based multi-cancer detection, health economics of screening programmes, and oncology drug access policy. Industry background spanning pharmaceutical medicine, regulatory science, clinical development, pharmacovigilance, and early-stage venture evaluation in life sciences.
+            </p>
+
+            <div class="hero-links">
+                <a href="mailto:drsanjaykhanna@outlook.com">Email</a>
+                <a href="https://www.linkedin.com/in/drsanjaykhanna/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=gL6jTOUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            </div>
+        </section>
+
+        <!-- PERSPECTIVES -->
+        <div id="perspectives" class="section fade-in">
+            <div class="section-header">
+                <h2>Perspectives</h2>
+            </div>
+
+            <div class="writing-list">
+                <a href="blog/mcq-method-for-ai.html" class="writing-item">
+                    <h3>I Learned Medicine Through MCQs. So I Used the Same Method to Learn AI Engineering.</h3>
+                    <p>Every doctor in the UK knows Passmedicine. I couldn't find an equivalent for AI/ML — so I built one. 205 questions, 14 topics, installable on your phone.</p>
+                    <span class="writing-meta">June 2026 &middot; AI Engineering &middot; Medical Education</span>
+                </a>
+                <a href="blog/ai-cancer-screening.html" class="writing-item">
+                    <h3>The Case for AI in Cancer Screening: Why Now, and What Comes Next</h3>
+                    <p>The NHS lung screening programme has a 50% uptake problem — worst in the communities that need it most. I modelled whether AI-driven patient engagement could close the gap, and what the economics look like.</p>
+                    <span class="writing-meta">May 2026 &middot; Health AI &middot; Cancer Screening</span>
+                </a>
+                <a href="blog/health-data-sovereignty.html" class="writing-item">
+                    <h3>An Edge AI Proof-of-Concept Thanks to My Mother-in-Law</h3>
+                    <p>Could a language model running on a phone read every clinical letter and build a structured personal health record the patient actually owns? A proof-of-concept in patient data sovereignty.</p>
+                    <span class="writing-meta">May 2026 &middot; Health AI &middot; Data Sovereignty</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- CURRENT WORK -->
+        <div id="work" class="section fade-in">
+            <div class="section-header">
+                <h2>Current Work</h2>
+            </div>
+            
+            <div class="current-grid">
+                <div class="current-card">
+                    <h3>Multi-Cancer Early Detection</h3>
+                    <p>Developing microsimulation models to evaluate population-level screening strategies and their health-economic impact. Principal Investigator for U-RESPOND, a behavioural study on patient decision-making around MCED screening.</p>
+                    <p class="org">PhD Research &middot; Roche / ICR</p>
+                </div>
+                <div class="current-card">
+                    <h3>AI in Cancer Screening</h3>
+                    <p>Building clinical decision support systems and NLP tools for lung cancer screening pathways. Benchmarking LLMs for safety, quality and readability as patient-facing decision aids.</p>
+                    <p class="org">ESMO AI Merit Award 2025</p>
+                </div>
+                <div class="current-card">
+                    <h3>Oncology Policy</h3>
+                    <p>Analysing UK drug access timelines post-Brexit, regulatory divergence between FDA and EMA, and its impact on cancer patients.</p>
+                    <p class="org">ESMO Congress 2025</p>
+                </div>
+                <div class="current-card">
+                    <h3>Clinical Oncology</h3>
+                    <p>Medical oncology registrar trained across solid tumours and haematological malignancies.</p>
+                    <p class="org">NHS Medical Oncology</p>
+                </div>
+            </div>
+
+            <!-- Working Groups & Committees -->
+            <div style="margin-top: 32px;">
+                <h3 style="font-family: var(--font-display); font-size: 1rem; font-weight: 500; margin-bottom: 16px; color: var(--text);">Working Groups & Committees</h3>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px;">
+                    <li style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">
+                        <strong style="color: var(--text); display: block;">Royal Marsden LLM/AI Research Working Group</strong>
+                        Defining institutional best practice for clinical AI, establishing governance frameworks for responsible deployment, and coordinating implementation strategy across oncology services.
+                    </li>
+                    <li style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">
+                        <strong style="color: var(--text); display: block;">BRC Speech Technology Working Group</strong>
+                        Multi-disciplinary group advancing voice AI in clinical workflows: developing vocal biomarker technologies for disease detection and monitoring, establishing research standards and methodological frameworks, and building cross-institutional partnerships to translate speech-based diagnostics into clinical practice.
+                    </li>
+                    <li style="font-size: 14px; color: var(--text-secondary); line-height: 1.6;">
+                        <strong style="color: var(--text); display: block;">PMST Trainees' Committee</strong>
+                        Committee member representing pharmaceutical medicine specialist trainees. 2021–2023.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PUBLICATIONS -->
+        <div id="publications" class="section fade-in">
+            <div class="section-header">
+                <h2>Selected Publications</h2>
+                <a href="https://scholar.google.com/citations?user=gL6jTOUAAAAJ&hl=en" target="_blank" rel="noopener">All publications &rarr;</a>
+            </div>
+
+            <ul class="pub-list">
+                <li class="pub-item">
+                    <span class="pub-title">Antibody-Drug Conjugates in Genitourinary Malignancies: The Clinical Trial Landscape and Emerging Efficacy Benchmarks</span>
+                    <span class="pub-venue">ASCO GU 2026</span>
+                </li>
+                <li class="pub-item">
+                    <span class="pub-title">Instructed Large Language Models as a Decision-Aid Tool for Lung Cancer Screening Participants</span>
+                    <span class="pub-venue">ESMO AI 2025</span>
+                </li>
+                <li class="pub-item">
+                    <span class="pub-title">Performance of Publicly Available LLMs as Decision-Aids for Lung Cancer Screening</span>
+                    <span class="pub-venue">ESMO AI 2025</span>
+                </li>
+                <li class="pub-item">
+                    <span class="pub-title">Access to Oncology Drugs in the UK – Are We Falling Behind Europe After Brexit?</span>
+                    <span class="pub-venue">ESMO 2025</span>
+                </li>
+                <li class="pub-item">
+                    <span class="pub-title">Enablers and Barriers of Clinical Trial Participation in Adult Patients from Minority Ethnic Groups</span>
+                    <span class="pub-venue">Trials 2025</span>
+                </li>
+                <li class="pub-item">
+                    <span class="pub-title">Regulatory Approvals for Genitourinary Cancer by the FDA and EMA Over 20 Years</span>
+                    <span class="pub-venue">JCO 2024</span>
+                </li>
+            </ul>
+
+            <div class="expandable" id="morePubs">
+                <ul class="pub-list">
+                    <li class="pub-item">
+                        <span class="pub-title">Mixed-Methods Study on Clinical Trial Recruitment from Ethnic Minority Groups</span>
+                        <span class="pub-venue">CCTC 2025</span>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-title">Primary Effusion Lymphoma: A Single-Institution Cohort Study</span>
+                        <span class="pub-venue">BHIVA 2023</span>
+                    </li>
+                    <li class="pub-item">
+                        <span class="pub-title">Frequency of Thrombocytopenia and HIT in Patients Receiving ECMO</span>
+                        <span class="pub-venue">Crit Care Med 2020</span>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="expand-btn" onclick="togglePubs(this)">Show more publications &darr;</button>
+        </div>
+
+        <!-- BACKGROUND -->
+        <div id="background" class="section fade-in">
+            <div class="section-header">
+                <h2>Background</h2>
+            </div>
+            
+            <div class="background-text">
+                <p>I completed academic foundation and core medical training at King's College Hospital on the haematology-oncology track. After a year in cardiac intensive care at the Royal Brompton, I joined Roche's physician rotation programme in 2019.</p>
+                
+                <p>Over six years at Roche, I rotated through regulatory affairs, medical affairs, pharmacovigilance, clinical development, and search and evaluation, gaining an end-to-end perspective on the pharmaceutical product lifecycle. Alongside this, I continued specialist training in medical oncology at Imperial NHS Trust.</p>
+                
+                <p>From 2021 to 2024, I served as portfolio mentor at Start Codon, Cambridge's life sciences accelerator (backed by Cambridge Innovation Capital and Genentech), contributing clinical and commercial due diligence to early-stage venture selection.</p>
+                
+                <p>In 2024, I began industry-sponsored doctoral research at the Royal Marsden Hospital and Institute of Cancer Research, focused on multi-cancer early detection, microsimulation modelling, and health AI.</p>
+            </div>
+
+            <!-- Qualifications always visible -->
+            <div class="cred-section">
+                <h3>Qualifications & Awards</h3>
+                <div class="cred-list">
+                    <div class="cred-item">
+                        <strong>MD(Res) Multi-Cancer Early Detection & Health AI</strong>
+                        <span>Institute of Cancer Research, 2024–2026</span>
+                    </div>
+                    <div class="cred-item">
+                        <strong>ESMO AI Merit Award</strong>
+                        <span>European Society for Medical Oncology, 2025</span>
+                    </div>
+                    <div class="cred-item">
+                        <strong>MRCP</strong>
+                        <span>Royal College of Physicians, 2018</span>
+                    </div>
+                    <div class="cred-item">
+                        <strong>MFPM</strong>
+                        <span>Faculty of Pharmaceutical Medicine, 2021</span>
+                    </div>
+                    <div class="cred-item">
+                        <strong>Diploma in Pharmaceutical Medicine</strong>
+                        <span>Faculty of Pharmaceutical Medicine, 2021</span>
+                    </div>
+                    <div class="cred-item">
+                        <strong>Diploma in Oncology</strong>
+                        <span>Institute of Cancer Research, 2022-2023</span>
+                    </div>
+                    <div class="cred-item">
+                        <strong>BMBS Medicine (Distinction)</strong>
+                        <span>Brighton & Sussex Medical School, 2014</span>
+                    </div>
+                    <div class="cred-item">
+                        <strong>MRes Translational Medicine (Distinction)</strong>
+                        <span>University of Manchester, 2009</span>
+                    </div>
+                    <div class="cred-item">
+                        <strong>BSc Biomedical Science (First Class)</strong>
+                        <span>Oxford Brookes University, 2008</span>
+                    </div>
+                    <div class="cred-item">
+                        <strong>Dean's Prize</strong>
+                        <span>Top Academic Performance, 2014</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div id="contact" class="footer fade-in">
+            <div class="footer-links">
+                <a href="mailto:drsanjaykhanna@outlook.com">drsanjaykhanna@outlook.com</a>
+                <a href="https://www.linkedin.com/in/drsanjaykhanna/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://scholar.google.com/citations?user=gL6jTOUAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Dr. Sanjay Khanna. London, UK.</p>
+        </div>
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.hamburger').classList.toggle('active');
+            document.getElementById('mobileMenu').classList.toggle('active');
+            document.body.style.overflow = document.getElementById('mobileMenu').classList.contains('active') ? 'hidden' : '';
+        }
+        function closeMenu() {
+            document.querySelector('.hamburger').classList.remove('active');
+            document.getElementById('mobileMenu').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function togglePubs(btn) {
+            var el = document.getElementById('morePubs');
+            el.classList.toggle('open');
+            btn.textContent = el.classList.contains('open') ? 'Show fewer publications \u2191' : 'Show more publications \u2193';
+        }
+
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+        });
+
+        document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeMenu(); });
+    </script>
+
+</body>
+</html>

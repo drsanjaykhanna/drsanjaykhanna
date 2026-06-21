@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Learned Medicine Through MCQs. So I Used the Same Method to Learn AI Engineering. | Dr. Sanjay Khanna</title>
+
+    <meta name="description" content="Every doctor in the UK knows Passmedicine. I couldn't find an equivalent for AI/ML — so I built one. 205 questions across 14 topics, installable on your phone.">
+    <meta name="keywords" content="AI engineering, MCQ, Passmedicine, machine learning, medical education, career change, doctor AI, LLM, RAG, fine-tuning, health AI, study tool, PWA">
+    <meta name="author" content="Dr. Sanjay Khanna">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sanjaykhannaMD.com/blog/mcq-method-for-ai.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://sanjaykhannaMD.com/blog/mcq-method-for-ai.html">
+    <meta property="og:title" content="I Learned Medicine Through MCQs. So I Used the Same Method to Learn AI Engineering.">
+    <meta property="og:description" content="Every doctor in the UK knows Passmedicine. I couldn't find an equivalent for AI/ML — so I built one.">
+    <meta property="og:locale" content="en_GB">
+    <meta property="article:author" content="Dr. Sanjay Khanna">
+    <meta property="article:published_time" content="2026-06-21">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #f7f5f2;
+            --bg-card: #ffffff;
+            --text: #2a2a2a;
+            --text-secondary: #555;
+            --text-tertiary: #7a7a7a;
+            --accent: #1a4a5e;
+            --accent-light: #e8f1f5;
+            --border: #e2ddd6;
+            --font-display: 'Newsreader', Georgia, serif;
+            --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, sans-serif;
+            --max-width: 680px;
+            --transition: 0.2s ease;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-body);
+            font-size: 17px;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .wrapper {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        /* --- NAV --- */
+        header {
+            border-bottom: 1px solid var(--border);
+            background: var(--bg);
+        }
+
+        .nav {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 20px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-name {
+            font-family: var(--font-display);
+            font-weight: 500;
+            font-size: 16px;
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .nav-name:hover { color: var(--accent); }
+
+        .nav-back {
+            font-size: 14px;
+            color: var(--text-tertiary);
+            text-decoration: none;
+            transition: color var(--transition);
+        }
+
+        .nav-back:hover { color: var(--accent); }
+
+        /* --- ARTICLE --- */
+        .article-header {
+            padding: 64px 0 40px;
+        }
+
+        .article-header h1 {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+            color: var(--text);
+            margin-bottom: 16px;
+        }
+
+        .article-meta {
+            font-size: 14px;
+            color: var(--text-tertiary);
+        }
+
+        .article-body {
+            padding-bottom: 80px;
+        }
+
+        .article-body h2 {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-top: 48px;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+
+        .article-body p {
+            margin-bottom: 20px;
+            color: var(--text);
+        }
+
+        .article-body p:last-child { margin-bottom: 0; }
+
+        .article-body strong {
+            font-weight: 600;
+        }
+
+        .article-body em {
+            font-style: italic;
+        }
+
+        .article-body a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+            transition: border-color var(--transition);
+        }
+
+        .article-body a:hover {
+            border-color: var(--accent);
+        }
+
+        /* --- FOOTER --- */
+        .post-footer {
+            padding: 40px 0;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .post-footer a {
+            font-size: 14px;
+            color: var(--accent);
+            text-decoration: none;
+            transition: opacity var(--transition);
+        }
+
+        .post-footer a:hover { opacity: 0.7; }
+
+        @media (max-width: 640px) {
+            .article-header h1 { font-size: 1.5rem; }
+            body { font-size: 16px; }
+            .article-header { padding: 48px 0 32px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <a href="../" class="nav-name">Sanjay Khanna</a>
+            <a href="../" class="nav-back">&larr; Home</a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+
+        <div class="article-header">
+            <h1>I Learned Medicine Through MCQs. So I Used the Same Method to Learn AI Engineering.</h1>
+            <p class="article-meta">June 2026 &middot; AI Engineering &middot; Medical Education</p>
+        </div>
+
+        <article class="article-body">
+            <p>Every doctor in the UK knows Passmedicine. You do 40 questions before a ward round. You get most of them wrong. You read the explanations — not just for the right answer, but for why the other three are wrong. You do it again tomorrow. After a few months of this, you pass MRCP.</p>
+
+            <p>When I started learning AI/ML properly — not reading blog posts, actually building things — I realised there was no equivalent resource. Plenty of courses. Plenty of documentation. No question bank where you test yourself, get it wrong, and learn from detailed explanations of every option.</p>
+
+            <p>So I built one.</p>
+
+            <h2>What it is</h2>
+
+            <p>205 questions across 14 topics. Transformers, RAG, fine-tuning, agents, quantization, evaluation, deployment. Each question has four options with full explanations for all of them — correct and incorrect. Because the wrong answer explanations are where the learning happens. Every doctor knows this.</p>
+
+            <p>It is a Progressive Web App — you can install it on your phone in 30 seconds. Open in Safari, tap Share, Add to Home Screen. Works offline. Dark mode. Spaced repetition. No account, no tracking, no cost.</p>
+
+            <p>I also added 16 Health AI questions covering HIPAA, clinical RAG architectures, FDA SaMD classification, and de-identification — because those are the questions that come up when you are a clinician building AI systems and nobody else in the room has treated a patient.</p>
+
+            <p>There is a module called "Your Roadmap: Doctor to AI Engineer" because I could not find one when I needed it.</p>
+
+            <h2>Why the MCQ method works for technical learning</h2>
+
+            <p>The evidence base for retrieval practice is not controversial. Testing yourself forces active recall, exposes specific gaps, and builds durable memory in a way that passive reading does not. Medical education figured this out decades ago. Passmedicine, PassTest, and question banks are how an entire profession learns. The method is not a gimmick. It is the most efficient path from "I have read about this" to "I can reason about this under pressure."</p>
+
+            <p>AI engineering has the same structure as clinical medicine in one important respect: the knowledge is broad, the concepts interlock, and the failure mode is not "I have never heard of this" but "I thought I understood this and I was wrong." MCQs surface exactly that kind of misunderstanding. You pick the answer that feels right, you discover it is wrong, and the explanation tells you why your mental model was off. That correction is worth more than an hour of reading.</p>
+
+            <h2>Who this is for</h2>
+
+            <p>Doctors and clinicians learning AI/ML to move into health tech, pharma AI, or research engineering. Data scientists preparing for AI engineering interviews. Anyone who learns better by testing themselves than by reading documentation.</p>
+
+            <p>If you learned medicine through MCQs, you will learn AI engineering the same way.</p>
+
+            <p>It is open source. If you want to add questions, <a href="https://github.com/drsanjaykhanna/ai-engineering-mcq">open a PR</a>.</p>
+
+            <p><strong><a href="https://drsanjaykhanna.github.io/ai-engineering-mcq">Try it here &rarr;</a></strong></p>
+        </article>
+
+        <div class="post-footer">
+            <a href="../">&larr; Back to home</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
